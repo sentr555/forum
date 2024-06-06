@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Запись на прием</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <img src="dental_clinic.jpg" alt="Стоматологическая клиника">
-        </header>
         <h1>Запись на прием</h1>
         <div class="working-hours">
             <p>Время работы: с 10:00 до 19:00</p>
             <p>Рабочие дни: с понедельника по пятницу</p>
         </div>
-        <form action="#" method="POST">
+        <form id="appointment-form">
             <div class="form-group">
                 <label for="first-name">Имя:</label>
                 <input type="text" id="first-name" name="first-name" required>
@@ -41,6 +39,9 @@
                 <button type="submit">Записаться</button>
             </div>
         </form>
+        <div id="confirmation" class="hidden">
+            Спасибо за запись! Мы свяжемся с вами для подтверждения.
+        </div>
     </div>
 </body>
 </html>
