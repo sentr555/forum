@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     form.addEventListener('submit', function(event) {
         event.preventDefault();
-        form.reset();
         confirmation.classList.remove('hidden');
+        form.reset();
     });
 });
+
